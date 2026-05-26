@@ -1,4 +1,4 @@
-# 🚦 Express Token Bucket Rate Limiter
+#  Express Token Bucket Rate Limiter
 
 A Token Bucket rate limiter middleware for Express.js built with TypeScript and backed by Redis.
 
@@ -6,7 +6,7 @@ It provides configurable, per-client rate limiting using a Redis-backed token bu
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 The Token Bucket algorithm maintains a bucket of tokens for each client (identified by IP address).
 
@@ -29,7 +29,7 @@ The app uses two parameters:
 - capacity (default 10), which defines the maximum size of the tokens a user can get
 - refillRate (default 1), which defines the number of tokens added each seconed
 ---
-## ✨ Features
+##  Features
 
 - Token Bucket rate limiting per IP  
 - Redis-backed persistence  
@@ -41,7 +41,7 @@ The app uses two parameters:
 
 ---
 
-## 📦 Prerequisites
+## Prerequisites
 
 - Node.js (v20+ recommended)
 - npm
@@ -49,7 +49,7 @@ The app uses two parameters:
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### Without Docker
 
@@ -73,7 +73,7 @@ docker-compose down
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 | Variable | Default | Description |
 |---|---|---|
@@ -82,14 +82,14 @@ docker-compose down
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 To test the rate limiter, send repeated GET requests to http://localhost:3000/ using Thunder Client, Postman, or curl; the first 10 requests should return 200 OK with the X-RateLimit-Remaining header decreasing on each call, and once the limit is exceeded the server will respond with 429 Too Many Requests, after which you can wait a few seconds for tokens to refill and confirm that requests start succeeding again.
 
 
 ---
 
-## 🌐 API
+##  API
 
 | Method | Endpoint | Description |
 |---|---|---|
