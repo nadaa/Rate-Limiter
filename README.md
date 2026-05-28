@@ -1,8 +1,6 @@
 #  Token Bucket Rate Limiter
 
-A Token Bucket rate limiter middleware for Express.js built with TypeScript and backed by Redis.
-
-It provides configurable, per-client rate limiting using a Redis-backed token bucket algorithm.
+A Token Bucket rate-limiter middleware built using Express.js, TypeScript, and Redis. It provides configurable, per-client rate limiting using a Redis-backed token bucket algorithm.
 
 ---
 
