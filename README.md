@@ -11,7 +11,7 @@ The Token Bucket algorithm maintains a bucket of tokens for each client (identif
 Each bucket has:
 
 - Capacity → maximum number of tokens  
-- Refill rate → tokens added per second  
+- RefillRate → tokens added per second  
 
 ### Request lifecycle:
 
