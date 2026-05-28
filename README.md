@@ -1,4 +1,4 @@
-#  Express Token Bucket Rate Limiter
+#  Token Bucket Rate Limiter
 
 A Token Bucket rate limiter middleware for Express.js built with TypeScript and backed by Redis.
 
