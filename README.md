@@ -61,14 +61,19 @@ npm start
 
 ### With Docker Compose
 
+```
 docker-compose up --build  
+```
 
 Run in background:
+```
 docker-compose up -d --build  
-
+```
 Stop:
-docker-compose down  
 
+```
+docker-compose down  
+```
 ---
 
 ##  Configuration
