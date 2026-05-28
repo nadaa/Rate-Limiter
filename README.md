@@ -87,12 +87,12 @@ docker-compose down
 To test the rate limiter, send repeated GET requests to http://localhost:3000/ using Thunder Client, Postman, or curl; the first 10 requests should return 200 OK with the X-RateLimit-Remaining header decreasing on each call, and once the limit is exceeded the server will respond with 429 Too Many Requests, after which you can wait a few seconds for tokens to refill and confirm that requests start succeeding again.
 
 
-### 200 OK
+Status: 200 OK
 {
   "message": "Hello, you are within the rate limit."
 }
 
-### 429 Too Many Requests
+Status: 429 Too Many Requests
 {
   "error": "Too many requests"
 }
